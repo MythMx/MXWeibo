@@ -6,17 +6,16 @@
 //  Copyright © 2015年 vizz. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MXAppDelegate.h"
 
-@interface AppDelegate ()
+@interface MXAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MXAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     return YES;
 }
 

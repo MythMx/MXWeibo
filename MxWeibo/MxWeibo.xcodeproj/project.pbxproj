@@ -11,8 +11,8 @@
 		5A20A51F1C0FF5D400BD896F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20A51D1C0FF5D400BD896F /* Main.storyboard */; };
 		5A20A5211C0FF5D400BD896F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A20A5201C0FF5D400BD896F /* Assets.xcassets */; };
 		5A20A5241C0FF5D400BD896F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20A5221C0FF5D400BD896F /* LaunchScreen.storyboard */; };
-		5A20A5551C10454D00BD896F /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A20A5541C10454D00BD896F /* MXAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		9280BC3FF4A764E839337D81 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AC43E5B7D7C2657E952C0 /* libPods.a */; };
+		9ADC577D1C1D475900E6CDBA /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC57721C1D475900E6CDBA /* MXAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +22,9 @@
 		5A20A5201C0FF5D400BD896F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A20A5231C0FF5D400BD896F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A20A5251C0FF5D400BD896F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A20A5531C10454D00BD896F /* MXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
-		5A20A5541C10454D00BD896F /* MXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
 		5E2D85F2B818A5770795E485 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9ADC57711C1D475900E6CDBA /* MXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
+		9ADC57721C1D475900E6CDBA /* MXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
 		9EAA62C7887C4F83A9BB6E14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA0AC43E5B7D7C2657E952C0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,8 +71,7 @@
 		5A20A5131C0FF5D400BD896F /* MxWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				5A20A54F1C10447500BD896F /* Classes */,
-				5A20A5251C0FF5D400BD896F /* Info.plist */,
+				9ADC57641C1D475900E6CDBA /* Classes */,
 				5A20A5141C0FF5D400BD896F /* Supporting Files */,
 			);
 			path = MxWeibo;
@@ -81,6 +80,7 @@
 		5A20A5141C0FF5D400BD896F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A20A5251C0FF5D400BD896F /* Info.plist */,
 				5A20A5201C0FF5D400BD896F /* Assets.xcassets */,
 				5A20A5221C0FF5D400BD896F /* LaunchScreen.storyboard */,
 				5A20A51D1C0FF5D400BD896F /* Main.storyboard */,
@@ -89,302 +89,189 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5A20A52B1C10447500BD896F /* Controller */ = {
+		9ADC57641C1D475900E6CDBA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC57651C1D475900E6CDBA /* Compose */,
+				9ADC57661C1D475900E6CDBA /* Discover */,
+				9ADC57671C1D475900E6CDBA /* Home */,
+				9ADC576B1C1D475900E6CDBA /* Main */,
+				9ADC57751C1D475900E6CDBA /* MessageCenter */,
+				9ADC57761C1D475900E6CDBA /* Newfeature */,
+				9ADC57781C1D475900E6CDBA /* OAuth */,
+				9ADC577C1C1D475900E6CDBA /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9ADC57651C1D475900E6CDBA /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		9ADC57661C1D475900E6CDBA /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		9ADC57671C1D475900E6CDBA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC57681C1D475900E6CDBA /* Controller */,
+				9ADC57691C1D475900E6CDBA /* Model */,
+				9ADC576A1C1D475900E6CDBA /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9ADC57681C1D475900E6CDBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5A20A52C1C10447500BD896F /* Model */ = {
+		9ADC57691C1D475900E6CDBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5A20A52D1C10447500BD896F /* View */ = {
+		9ADC576A1C1D475900E6CDBA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5A20A52E1C10447500BD896F /* Profile(我) */ = {
+		9ADC576B1C1D475900E6CDBA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5A20A52B1C10447500BD896F /* Controller */,
-				5A20A52C1C10447500BD896F /* Model */,
-				5A20A52D1C10447500BD896F /* View */,
+				9ADC576C1C1D475900E6CDBA /* Category */,
+				9ADC576D1C1D475900E6CDBA /* Controller */,
+				9ADC576E1C1D475900E6CDBA /* Lib */,
+				9ADC576F1C1D475900E6CDBA /* Model */,
+				9ADC57701C1D475900E6CDBA /* Other */,
+				9ADC57731C1D475900E6CDBA /* Tool */,
+				9ADC57741C1D475900E6CDBA /* View */,
 			);
-			path = "Profile(我)";
+			path = Main;
 			sourceTree = "<group>";
 		};
-		5A20A52F1C10447500BD896F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5A20A5301C10447500BD896F /* Model */ = {
+		9ADC576C1C1D475900E6CDBA /* Category */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Category;
 			sourceTree = "<group>";
 		};
-		5A20A5311C10447500BD896F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A20A5321C10447500BD896F /* Compose(发微博) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A52F1C10447500BD896F /* Controller */,
-				5A20A5301C10447500BD896F /* Model */,
-				5A20A5311C10447500BD896F /* View */,
-			);
-			path = "Compose(发微博)";
-			sourceTree = "<group>";
-		};
-		5A20A5331C10447500BD896F /* Controller */ = {
+		9ADC576D1C1D475900E6CDBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5A20A5341C10447500BD896F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5A20A5351C10447500BD896F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A20A5361C10447500BD896F /* Discover(发现) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A5331C10447500BD896F /* Controller */,
-				5A20A5341C10447500BD896F /* Model */,
-				5A20A5351C10447500BD896F /* View */,
-			);
-			path = "Discover(发现)";
-			sourceTree = "<group>";
-		};
-		5A20A5371C10447500BD896F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5A20A5381C10447500BD896F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5A20A5391C10447500BD896F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A20A53A1C10447500BD896F /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A5371C10447500BD896F /* Controller */,
-				5A20A5381C10447500BD896F /* Model */,
-				5A20A5391C10447500BD896F /* View */,
-			);
-			path = "Home(首页)";
-			sourceTree = "<group>";
-		};
-		5A20A53B1C10447500BD896F /* Caregory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Caregory;
-			sourceTree = "<group>";
-		};
-		5A20A53C1C10447500BD896F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5A20A53D1C10447500BD896F /* Lib */ = {
+		9ADC576E1C1D475900E6CDBA /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		5A20A53E1C10447500BD896F /* Model */ = {
+		9ADC576F1C1D475900E6CDBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5A20A53F1C10447500BD896F /* Other */ = {
+		9ADC57701C1D475900E6CDBA /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				5A20A5531C10454D00BD896F /* MXAppDelegate.h */,
-				5A20A5541C10454D00BD896F /* MXAppDelegate.m */,
+				9ADC57711C1D475900E6CDBA /* MXAppDelegate.h */,
+				9ADC57721C1D475900E6CDBA /* MXAppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		5A20A5401C10447500BD896F /* Tool */ = {
+		9ADC57731C1D475900E6CDBA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		5A20A5411C10447500BD896F /* View */ = {
+		9ADC57741C1D475900E6CDBA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5A20A5421C10447500BD896F /* Main(主要) */ = {
+		9ADC57751C1D475900E6CDBA /* MessageCenter */ = {
 			isa = PBXGroup;
 			children = (
-				5A20A53B1C10447500BD896F /* Caregory */,
-				5A20A53C1C10447500BD896F /* Controller */,
-				5A20A53D1C10447500BD896F /* Lib */,
-				5A20A53E1C10447500BD896F /* Model */,
-				5A20A53F1C10447500BD896F /* Other */,
-				5A20A5401C10447500BD896F /* Tool */,
-				5A20A5411C10447500BD896F /* View */,
 			);
-			path = "Main(主要)";
+			path = MessageCenter;
 			sourceTree = "<group>";
 		};
-		5A20A5431C10447500BD896F /* Controller */ = {
+		9ADC57761C1D475900E6CDBA /* Newfeature */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC57771C1D475900E6CDBA /* Controller */,
+			);
+			path = Newfeature;
+			sourceTree = "<group>";
+		};
+		9ADC57771C1D475900E6CDBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5A20A5441C10447500BD896F /* Model */ = {
+		9ADC57781C1D475900E6CDBA /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				9ADC57791C1D475900E6CDBA /* Controller */,
+				9ADC577A1C1D475900E6CDBA /* Model */,
+				9ADC577B1C1D475900E6CDBA /* View */,
 			);
-			path = Model;
+			path = OAuth;
 			sourceTree = "<group>";
 		};
-		5A20A5451C10447500BD896F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A20A5461C10447500BD896F /* MessageCenter(消失) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A5431C10447500BD896F /* Controller */,
-				5A20A5441C10447500BD896F /* Model */,
-				5A20A5451C10447500BD896F /* View */,
-			);
-			path = "MessageCenter(消失)";
-			sourceTree = "<group>";
-		};
-		5A20A5471C10447500BD896F /* Controller */ = {
+		9ADC57791C1D475900E6CDBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5A20A5481C10447500BD896F /* Model */ = {
+		9ADC577A1C1D475900E6CDBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5A20A5491C10447500BD896F /* View */ = {
+		9ADC577B1C1D475900E6CDBA /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5A20A54A1C10447500BD896F /* Newfeature(新特性) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A5471C10447500BD896F /* Controller */,
-				5A20A5481C10447500BD896F /* Model */,
-				5A20A5491C10447500BD896F /* View */,
-			);
-			path = "Newfeature(新特性)";
-			sourceTree = "<group>";
-		};
-		5A20A54B1C10447500BD896F /* Controller */ = {
+		9ADC577C1C1D475900E6CDBA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		5A20A54C1C10447500BD896F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5A20A54D1C10447500BD896F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5A20A54E1C10447500BD896F /* OAuth(授权) */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A54B1C10447500BD896F /* Controller */,
-				5A20A54C1C10447500BD896F /* Model */,
-				5A20A54D1C10447500BD896F /* View */,
-			);
-			path = "OAuth(授权)";
-			sourceTree = "<group>";
-		};
-		5A20A54F1C10447500BD896F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5A20A52E1C10447500BD896F /* Profile(我) */,
-				5A20A5321C10447500BD896F /* Compose(发微博) */,
-				5A20A5361C10447500BD896F /* Discover(发现) */,
-				5A20A53A1C10447500BD896F /* Home(首页) */,
-				5A20A5421C10447500BD896F /* Main(主要) */,
-				5A20A5461C10447500BD896F /* MessageCenter(消失) */,
-				5A20A54A1C10447500BD896F /* Newfeature(新特性) */,
-				5A20A54E1C10447500BD896F /* OAuth(授权) */,
-			);
-			name = Classes;
-			path = ../../../PodMas/MXWeibo/MXWeibo/MXWeibo/Classes;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		B544876678CBCF6879D4BF1F /* Frameworks */ = {
@@ -518,7 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A20A5161C0FF5D400BD896F /* main.m in Sources */,
-				5A20A5551C10454D00BD896F /* MXAppDelegate.m in Sources */,
+				9ADC577D1C1D475900E6CDBA /* MXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
