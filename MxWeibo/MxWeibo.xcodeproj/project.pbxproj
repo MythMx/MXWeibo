@@ -13,6 +13,7 @@
 		5A20A5241C0FF5D400BD896F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20A5221C0FF5D400BD896F /* LaunchScreen.storyboard */; };
 		9280BC3FF4A764E839337D81 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0AC43E5B7D7C2657E952C0 /* libPods.a */; };
 		9ADC577D1C1D475900E6CDBA /* MXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC57721C1D475900E6CDBA /* MXAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		9ADC57801C1D482400E6CDBA /* MXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC577F1C1D482400E6CDBA /* MXHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		5E2D85F2B818A5770795E485 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9ADC57711C1D475900E6CDBA /* MXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXAppDelegate.h; sourceTree = "<group>"; };
 		9ADC57721C1D475900E6CDBA /* MXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXAppDelegate.m; sourceTree = "<group>"; };
+		9ADC577E1C1D482400E6CDBA /* MXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXHomeViewController.h; sourceTree = "<group>"; };
+		9ADC577F1C1D482400E6CDBA /* MXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXHomeViewController.m; sourceTree = "<group>"; };
 		9EAA62C7887C4F83A9BB6E14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA0AC43E5B7D7C2657E952C0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +134,8 @@
 		9ADC57681C1D475900E6CDBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9ADC577E1C1D482400E6CDBA /* MXHomeViewController.h */,
+				9ADC577F1C1D482400E6CDBA /* MXHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADC57801C1D482400E6CDBA /* MXHomeViewController.m in Sources */,
 				5A20A5161C0FF5D400BD896F /* main.m in Sources */,
 				9ADC577D1C1D475900E6CDBA /* MXAppDelegate.m in Sources */,
 			);
