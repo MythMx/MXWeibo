@@ -7,6 +7,10 @@
 //
 
 #import "MXAppDelegate.h"
+#import "MXOAuthViewController.h"
+#import "MXAccount.h"
+#import "MXAccountTool.h"
+#import "UIWindow+Switch.h"
 
 @interface MXAppDelegate ()
 
@@ -16,6 +20,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    [self.window makeKeyAndVisible];
+    
+    
+    MXAccount *account = [MXAccountTool account];
+    
+    if (account) {
+        [self.window switchRootViewController];
+    } else {
+        self.window.rootViewController = [[MXOAuthViewController alloc] init];
+    }
+    
     return YES;
 }
 
